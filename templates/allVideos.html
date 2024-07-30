@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your meta tags, title, and CSS links -->
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/gstyles.css')}}">
+
+    <!--link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'-->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('main') }}">Home</a></li>
+        </ul>
+    </nav>
+	
+    <header>
+        <h1><font color="white">Projects Videos</font></h1>
+		<hr>
+    </header>
+    <h3><font color="white">SELECT A BUTTON FOR A PROJECT VIDEOS</font></h3>
+	  <div class="categories">
+		<button onclick="displayCategory('smarthome')">Smarthome</button>
+		<button onclick="displayCategory('biogas')">IoT Biogas</button>
+		 <button onclick="displayCategory('offgrid')">Off-Grid</button>
+		 <button onclick="displayCategory('robotic')">Robotics</button>
+	  </div>
+
+  <div class="video-container" id="videoContainer">
+	
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

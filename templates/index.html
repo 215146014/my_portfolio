@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Mercy_Ng</a>
+
+        <i class="bx bx-menu" id="menu-icon"></i> 
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ================== home section =================== -->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi there, my name is</h3>
+            <h1>Charles Ngala</h1>
+            <h3>And I'm an <span class="multiple-text">Automation Engineer</span></h3>
+            <p>I have done a home automation, solar power generator, humanoid robot, 
+				and build a biogas bigester, that can produce a gas using any waste 
+				i.e. Chicken waste, Cow dung, etc..
+				</p>
+            <div class="social-media">
+                <p>Not yet available</p>
+            </div><br></br>
+            <a href="static/CharlesCV.pdf" class="btn" download>Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="static/pic.jpg" alt="">
+        </div>
+
+    </section>
+
+    <!-- ================== about section =================== -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="static/pic.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Automation Engineer</h3>
+            <p>I am a highly motivated and technically proficient with a National 
+				Diploma in Information Technology (Intelligent Industrial Systems). 
+				My academic excellence and practical experience have equipped me with 
+				a strong foundation in programming and hardware expertise. I have 
+				successfully completed innovative projects, such as smart home automation,
+				biogas generation, solar power backup, water monitoring systems, 
+				and humanoid robot development!</p>
+        </div>
+    </section>
+
+    <!-- ================== services section =================== -->
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Achievements</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <!--i class='bx bx-code-alt'></i-->
+                <h3>Smart Home Automation</h3>
+                <p>This section will give you more details about the
+					Smarthome project. It explains the everything based on 
+					the smart home.</p>
+                <a href="{{ url_for('smarthome') }}" class="btn">Read More (Smart)</a>
+            </div>
+
+            <div class="services-box">
+                <!--i class='bx bx-joystick'></i-->
+                <h3>IoT  based Biogas System</h3>
+                <p>How useful is the IoT Biogas System, and how it works,
+					all are included in this discription of the biogas documentation</p>
+				<a href="{{ url_for('biogas') }}" class="btn">All Pages</a>
+            </div>
+
+            <!--div class="services-box">
+                <i class='bx bx-joystick'></i>
+                <h3>Green House Automation</h3>
+                <p>This is an automated green house where things in the green house 
+					happens automatically, the watering of plants, temperature alert, 
+						rain detector, and pumping.</p>
+                <a href="" class="btn">Read More</a>
+            </div-->
+			
+			<div class="services-box">
+                <!--i class='bx bx-joystick'></i-->
+                <h3>Off-Grid Solar Power Generator</h3>
+                <p>This is a backup for your home and or your office just in 
+					case of loadshedding. never get board during loadshedding and 
+					continue to work nicely as long as you have the Off-Grid Solar Power Generator.</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+			
+			<div class="services-box">
+                <!--i class='bx bx-joystick'></i-->
+                <h3>Humanoid Robotics</h3>
+                <p>The purpose of creating this Humanoid robotis to provide
+					help in Education, Health, Agriculture, Security, etc.., in our country
+					and in the government by creating this robot to interact with humans, do task
+					for humans and help in many cases and where a human can't do or help</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- ================== portfolio section =================== -->
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Current <Span>Projects</Span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="static/p1.jpg" alt=""width="300" height="260" >
+                <div class="portfolio-layer">
+                    <h4>Biogas</h4>
+                    <p>
+                        This link will take you to the biogas digester I have build
+						and you will find the pictures and step by step methods
+                    </p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="static/s.jpg" alt="" width="300" height="260">
+                <div class="portfolio-layer">
+                    <h4>Home Automation</h4>
+                    <p>
+                        Here you will find the small house I have automated
+						The appliances inside this house are controlled using aa voice command.
+                    </p>
+
+                        <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="static/sol.png" alt="" width="300" height="260" >
+                <div class="portfolio-layer">
+                    <h4>Solar Power Generator</h4>
+                    <p>
+						This is a backup power I have build, it is used when facing loadshedding
+					</p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="static/h.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Hardware, Sotware, and Microcontrollers</h4>
+                    <p>This link will provide you with all the hardware, software, and Microcontrollers I used for my projects </p>
+                    <a href=""><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ================== contact section =================== -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Email Address">
+            </div>
+            
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Mercy_Ng | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="static/js/scripts.js"></script>
+
+</body>
+</html>

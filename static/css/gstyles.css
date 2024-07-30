@@ -1,0 +1,294 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+	background: #004643;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+	height: 40px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Right-align the text */
+}
+
+li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.categories {
+  margin-bottom: 20px;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video-item {
+  margin: 10px;
+}
+
+header {
+    background-color: #004643;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*popup and chat*/
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+/*     width: 300px;
+    height: 300px;
+    background-color: grey;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	z-index: 1000;
+	justify-content: right;
+    align-items: right;  */
+}
+
+.popup-content {
+    padding: 10px;
+ 	background-color: grey;
+    border-radius: 5px; 
+}
+
+.popup-text {
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.chat {
+    display: flex;
+    flex-direction: column;
+	align-items: right;
+}
+
+.message {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.user {
+    background-color: #4caf50;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot {
+    background-color: #e0e0e0;
+    align-self: flex-end;
+}
+
+/*images*/
+.image-container {
+    display: large;
+    grid-template-columns: repeat(5, 10fr); /* Adjust the number of columns as needed */
+    gap: 10px;
+    padding: 20px;
+	width: 300;
+	height: 300;
+}
+
+.custom-video {
+    width: 300; /* Make the video responsive */
+    height: 300; /* Maintain aspect ratio */
+}
+
+.category-dropdown {
+    margin-bottom: 20px;
+}
+
+.category-images {
+    display: none;
+}
+
+.gallery-image {
+    width: 50; /* Adjust the width as needed */
+    height: 50; /* Maintain the aspect ratio */
+}
+
+/*text boxes*/
+.text-box {
+    position: absolute;
+    width: 500px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+	text-align: center
+	bottom: 50;
+}
+
+.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.top-right {
+    top: 500px;
+    right: 550px;
+	left: 10;
+	width: 500px;
+	height: 90px;
+	text-align: center;
+	background-image: url("../images/SmartHouse/house (57).jpg");
+}
+
+.top-center {
+    top: 1200px;
+    right: 550px;
+	left: 10;
+	width: 400px;
+	height: 50px;
+	background-image: url("../images/biogas/bios (3).jpg");
+}
+
+.bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+/*menu*/
+.top-left-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #333;
+    padding: 10px;
+}
+
+.top-left-menu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/*mobile menu style*/
+.mobile-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+	top: 0
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background-color: #333;
+    padding: 10px;
+    width: 150px;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+	transition: font-weight 0.2s ease;
+}
+
+/*Bold on Hover:*/
+.menu a:hover {
+    font-weight: bold;
+}
+
+/*menu label*/
+.menu-label {
+    margin-right: 10px; /* Adjust spacing as needed */
+    font-weight: bold;
+}
+.topic {
+  height: 100vh; /* Set the height of each topic section */
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  /*transition: background-image 1s; /* Smooth transition for background change */
+  /*transition: opacity 0.9s, background-image 0.9s;*/
+  opacity: 14;
+}
+
+.topic.hidden {
+  opacity: 0; /* Fade-out effect */
+}
+#topic1 {
+  background-image: url("../images/SmartHouse/house (57).jpg");
+}
+
+#topic2 {
+  background-image: url("../images/biogas/bios (3).jpg");
+}
+
+/* Repeat this for other topics */

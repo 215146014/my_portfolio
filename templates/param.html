@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paragraphs with 15 Words</title>
+    <style>
+        /* Define CSS styles as needed */
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+	<h3>The project utilizes an 8-channel relay module connected to a Raspberry Pi 3, programmed in Python.</h3>
+	<h4>components and their functionalities:</h4>
+    <div id="paragraphs-container"></div>
+    <script>
+        // Text with more than 15 words
+		
+        const text = "1. Raspberry Pi 3: The Raspberry Pi 3 is a small, single-board computer that serves as the central hub for the smart house project. It runs the Python programming language and acts as the brain for processing voice commands and controlling the connected devices. 2. 8-channel Relay Module: The 8-channel relay module allows the Raspberry Pi to control multiple appliances and lights simultaneously. Each channel of the relay can control an individual device. 3. Kitchen Light, Bedroom Light, Bathroom Light, Garage Light, Steps Light: These are the various lights in the house that are connected to the relay module. Each light is controlled through a separate relay channel, allowing them to be turned on or off based on voice commands. 4. Heater: The heater in the house is also connected to a relay channel. Voice commands can be used to control the heater's operation, such as turning it on or off. 5. Stove: Similar to the other devices, the stove is connected to a relay channel. Voice commands can be used to control the stove's functionality, like turning it on or off. 6. TV: The TV is connected to a relay channel as well. Voice commands can be used to turn the TV on or off, adjust volume, change channels, or perform other available commands. 7. Fan: The fan is connected to a relay channel for control through voice commands. Users can turn the fan on or off or adjust its speed using voice instructions. 8. The Raspberry Pi 3, with its Python programming, serves as the central control unit for the smart house project. It processes voice commands and sends appropriate signals to the relay module, which in turn controls the connected devices accordingly. The relay module allows for easy integration and control of multiple appliances and lights in the house.";
+
+        // Splitting the text into 15-word chunks
+        const words = text.split(' ');
+        const chunkSize = 15;
+        const paragraphs = [];
+
+        for (let i = 0; i < words.length; i += chunkSize) {
+            const chunk = words.slice(i, i + chunkSize).join(' ');
+            paragraphs.push(chunk);
+        }
+
+        // Creating HTML paragraphs and adding them to the document
+        const container = document.getElementById('paragraphs-container');
+        paragraphs.forEach((chunk) => {
+            const paragraph = document.createElement('p');
+            paragraph.textContent = chunk;
+            container.appendChild(paragraph);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smarthome Doc</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/smt.css')}}">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        /* Define CSS styles as needed */
+        .topic {
+            font-weight: bold;
+			font-size: 20px;
+			margin-left: 30px;
+        }
+        .explanation {
+            margin-left: 35px;
+			font-size: 18px;
+			color: white
+        }
+		.headers {
+			font-weight: bold;
+			margin-left: 30px;
+		}
+    </style>
+	<style>
+    /* CSS to style the horizontal line */
+    hr {
+      border: 0; /* Remove default border */
+      border-top: 3px solid red; /* Set the top border to create the line */
+      margin: 20px 0; /* Adjust margin as needed */
+    }
+  </style>
+  <style>
+    /* CSS to change the underline color */
+    .colored-underline {
+      text-decoration: underline;
+      text-decoration-color: red; /* Change this to the desired color */
+    }
+  </style>
+</head>
+<body background="white">
+    <header class="header">
+        <a href="#home" class="logo">Mercy_Ng</a>
+
+        <i class="bx bx-menu" id="menu-icon"></i> 
+
+        <nav class="navbar">
+            <a href="{{ url_for('main') }}">Home</a>
+            <a href="{{ url_for('gallery') }}">Photos</a>
+            <a href="{{ url_for('videos') }}">Videos</a>
+			
+        </nav>
+    </header>
+	<br></br><br></br><br></br>
+	<h1><font size="8" class="headers">1.1	IDENTIFICATION.</font></h1>
+	<hr>
+	<h3><font size="4" class="headers">The project utilizes an 8-channel relay module connected to a Raspberry Pi 3 which is programmed in Python.</font></h3>
+	<br></br><u class="colored-underline"><h4 class="headers"><font size="6">COMPONENTS FUNCTIONALITIES:</font></h4></u>
+
+    <div id="topics-container"></div>
+    <script>
+        const topicsAndExplanations = [
+            {
+                topic: "i. Raspberry Pi 3:",
+                explanation: "The Raspberry Pi 3 is a small, single-board computer that serves as the central hub for the smart house project. It runs the Python programming language and acts as the brain for processing voice commands and controlling the connected devices."
+            },
+			{
+                topic: "ii.	8-channel Relay Module: ",
+                explanation: "The 8-channel relay module allows the Raspberry Pi to control multiple appliances and lights simultaneously. Each channel of the relay can control an individual device."
+            },
+			{
+                topic: "iii.	Kitchen Light, Bedroom Light, Bathroom Light, Garage Light, Steps Light:",
+                explanation: "These are the various lights in the house that are connected to the relay module. Each light is controlled through a separate relay channel, allowing them to be turned on or off based on voice commands."
+				},
+			{
+                topic: "iv. Heater:",
+                explanation: "The heater in the house is also connected to a relay channel. Voice commands can be used to control the heater's operation, such as turning it on or off."
+				},
+			{
+                topic: "v. Television:",
+                explanation: "The TV is connected to a relay channel as well. Voice commands can be used to turn the TV on or off, adjust volume, change channels, or perform other available commands."
+			},
+			{
+                topic: "vi. Fan:",
+                explanation: "The fan is connected to a relay channel for control through voice commands. Users can turn the fan on or off or adjust its speed using voice instructions."
+				},
+            // Add more topics and their explanations similarly
+            {
+                topic: "Stove:",
+                explanation: "Similar to the other devices, the stove is connected to a relay channel. Voice commands can be used to control the stove's functionality, like turning it on or off."
+            }
+        ];
+
+        const container = document.getElementById('topics-container');
+
+        topicsAndExplanations.forEach(({ topic, explanation }) => {
+            const topicParagraph = document.createElement('p');
+            topicParagraph.classList.add('topic');
+            topicParagraph.textContent = topic;
+
+            const explanationParagraph = document.createElement('p');
+            explanationParagraph.classList.add('explanation');
+            explanationParagraph.textContent = explanation;
+
+            container.appendChild(topicParagraph);
+            container.appendChild(explanationParagraph);
+        });
+    </script>
+	<br></br><h4 class="headers"><font size="4"> Raspberry Pi 3, with its Python programming, serves as the central control unit for the smart house project. 
+			It processes voice commands and sends appropriate signals to the relay module, which in turn controls the connected devices accordingly. 
+			The relay module allows for easy integration and control of multiple appliances and lights in the house.</font></h4>
+	
+	<br></br><h1 class="headers"><font size="8">1.2	SYSTEM OVERVIEW.</font></h1>
+	<hr>
+	<h3 class="headers"><font size="4">Smart house project using voice commands to control various devices:</font></h3><br></br>
+	
+	<h3 class="headers"><font size="6">Hardware Components:</font></h3>
+	<h4 class="headers"><p><font size="4">a.	Kitchen light<p/>
+	<p>b.	Bedroom light<p/>
+	<p>c.	Bathroom light<p/>
+	<p>d.	Garage light<p/>
+	<p>e.	Staircase light<p/>
+	<p>f.	Heater<p/>
+	<p>g.	Stove<p/>
+	<p>h.	TV<p/>
+	<p>i.	Fan<p/>
+	<p>j.	Raspberry Pi 3<p/>
+	<p>k.	8-channel relay module<p/></font></h4>
+
+</body>
+</html>

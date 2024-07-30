@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your meta tags, title, and CSS links -->
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/gstyles.css')}}">
+
+    <!--link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'-->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('main') }}">Home</a></li>
+        </ul>
+    </nav>
+	
+    <header>
+        <h1><font color="white">Projects Images</font></h1>
+    </header>
+    <h3><font color="white">Projects Images by Categories</font></h3><br></br>
+    <div class="category-dropdown">
+        <label for="category-select"><b>Select a Category:</b></label>
+        <select id="category-select">
+            <option value="all">All Categories</option>
+            <option value="Biogas">Biogas System</option>
+            <option value="smarthouse">Smart House</option>
+			<option value="offgrid">Off-Grid Solar Power</option>
+            <option value="robot">Robotic</option>
+        </select>
+    </div>
+
+    <div class="image-container">
+        <div class="category-images" id="Biogas">
+			<img src="static/bios (1).jpeg" alt="">
+			<img src="static/pic.jpg" alt="">
+            <img src="H:\Flask App\Flask App\static\images\biogas\bios (1).jpg" alt="Image 1" width="300" height="300">
+            <img src="H:\C_Web\images\biogas\bios (2).jpg" alt="Image 2"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (3).jpg" alt="Image 3"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (4).jpg" alt="Image 4"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (5).jpg" alt="Image 5"  width="300" height="300">
+            <img src="H:\C_Web\images\biogas\bios (6).jpg" alt="Image 1" width="300" height="300">
+            <img src="H:\C_Web\images\biogas\bios (7).jpg" alt="Image 2"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (8).jpg" alt="Image 3"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (9).jpg" alt="Image 4"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (10).jpg" alt="Image 5"  width="300" height="300">
+            <img src="H:\C_Web\images\biogas\bios (11).jpg" alt="Image 1" width="300" height="300">
+            <img src="H:\C_Web\images\biogas\bios (12).jpg" alt="Image 2"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (13).jpg" alt="Image 3"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (14).jpg" alt="Image 4"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (15).jpg" alt="Image 5"  width="300" height="300">
+            <img src="H:\C_Web\images\biogas\bios (16).jpg" alt="Image 1" width="300" height="300">
+            <img src="H:\C_Web\images\biogas\bios (17).jpg" alt="Image 2"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (18).jpg" alt="Image 3"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (19).jpg" alt="Image 4"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (20).jpg" alt="Image 5"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (21).jpg" alt="Image 5"  width="300" height="300">
+            <img src="H:\C_Web\images\biogas\bios (22).jpg" alt="Image 1" width="300" height="300">
+            <img src="H:\C_Web\images\biogas\bios (23).jpg" alt="Image 2"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (24).jpg" alt="Image 3"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (25).jpg" alt="Image 4"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (26).jpg" alt="Image 5"  width="300" height="300">
+            <img src="H:\C_Web\images\biogas\bios (27).jpg" alt="Image 1" width="300" height="300">
+            <img src="H:\C_Web\images\biogas\bios (28).jpg" alt="Image 2"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (29).jpg" alt="Image 3"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (30).jpg" alt="Image 4"  width="300" height="300">
+			<img src="H:\C_Web\images\biogas\bios (31).jpg" alt="Image 5"  width="300" height="300">
+        </div>
+        <div class="category-images" id="offgrid">
+            <img src="H:\C_Web\images\Off-Grid\pic.png" alt="Image 1" width="300" height="300">
+            <img src="H:\C_Web\images\Off-Grid\pic1.png" alt="Image 2" width="300" height="300">
+			<img src="H:\C_Web\images\Off-Grid\pic2.png" alt="Image 3" width="300" height="300">
+			<img src="H:\C_Web\images\Off-Grid\pic3.png" alt="Image 4" width="300" height="300">
+			<img src="H:\C_Web\images\Off-Grid\pic4.png" alt="Image 5" width="300" height="300">
+            <img src="H:\C_Web\images\Off-Grid\pic5.png" alt="Image 1" width="300" height="300">
+            <img src="H:\C_Web\images\Off-Grid\pic6.png" alt="Image 2" width="300" height="300">
+			<img src="H:\C_Web\images\Off-Grid\pic7.png" alt="Image 3" width="300" height="300">
+			<img src="H:\C_Web\images\Off-Grid\pic8.png" alt="Image 4" width="300" height="300">
+			<img src="H:\C_Web\images\Off-Grid\pic4.png" alt="Image 5" width="300" height="300">
+        </div>
+        <div class="category-images" id="smarthouse">
+            <img src="H:\C_Web\images\SmartHouse\house (1).jpg" alt="Image 11" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (2).jpg" alt="Image 12" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (3).jpg" alt="Image 13" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (4).jpg" alt="Image 14" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (5).jpg" alt="Image 15" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (6).jpg" alt="Image 11" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (7).jpg" alt="Image 12" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (8).jpg" alt="Image 13" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (9).jpg" alt="Image 14" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (10).jpg" alt="Image 15" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (11).jpg" alt="Image 11" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (12).jpg" alt="Image 12" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (13).jpg" alt="Image 13" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (14).jpg" alt="Image 14" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (15).jpg" alt="Image 15" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (16).jpg" alt="Image 11" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (17).jpg" alt="Image 12" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (18).jpg" alt="Image 13" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (19).jpg" alt="Image 14" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (20).jpg" alt="Image 15" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (21).jpg" alt="Image 11" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (22).jpg" alt="Image 12" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (23).jpg" alt="Image 13" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (24).jpg" alt="Image 14" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (25).jpg" alt="Image 15" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (26).jpg" alt="Image 11" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (27).jpg" alt="Image 12" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (28).jpg" alt="Image 13" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (29).jpg" alt="Image 14" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (30).jpg" alt="Image 15" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (31).jpg" alt="Image 11" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (32).jpg" alt="Image 12" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (33).jpg" alt="Image 13" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (34).jpg" alt="Image 14" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (35).jpg" alt="Image 15" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (36).jpg" alt="Image 11" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (37).jpg" alt="Image 12" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (38).jpg" alt="Image 13" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (39).jpg" alt="Image 14" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (40).jpg" alt="Image 15" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (41).jpg" alt="Image 11" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (42).jpg" alt="Image 12" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (43).jpg" alt="Image 13" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (44).jpg" alt="Image 14" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (45).jpg" alt="Image 15" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (46).jpg" alt="Image 11" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (47).jpg" alt="Image 12" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (48).jpg" alt="Image 13" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (49).jpg" alt="Image 14" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (50).jpg" alt="Image 15" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (51).jpg" alt="Image 11" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (52).jpg" alt="Image 12" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (53).jpg" alt="Image 13" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (54).jpg" alt="Image 14" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (55).jpg" alt="Image 15" width="300" height="300">
+        </div>
+        <div class="category-images" id="robot">
+            <img src="H:\C_Web\images\SmartHouse\house (1).jpg" alt="Image 16" width="300" height="300">
+            <img src="H:\C_Web\images\SmartHouse\house (4).jpg" alt="Image 17" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (5).jpg" alt="Image 18" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (8).jpg" alt="Image 19" width="300" height="300">
+			<img src="H:\C_Web\images\SmartHouse\house (9).jpg" alt="Image 20" width="300" height="300">
+			
+        </div>
+        <!-- Add more category sections here -->
+    </div>
+
+    <!-- Your navigation or footer links -->
+	<!-- img src="static/pic.jpg" alt="" -->
+
+    <script src="H:\C_Web\static\gallery.js"></script> <!-- Include JavaScript file -->
+</body>
+</html>
